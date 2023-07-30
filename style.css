@@ -1,68 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* reset css */
 @font-face {
   font-family: "Giants-Bold";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2")
     format("woff2");
   font-weight: 700;
   font-style: normal;
-}
-html {
-  font-family: "Giants-Bold";
-}
-
-h1 {
-  color: black;
-}
-
-p {
-  color: darkgray;
-}
-.p2 {
-  color: darkblue;
-}
-
-#reason {
-  color: brown;
-}
-li {
-  list-style-type: none;
-}
-
-#reason::before {
-  content: "ONLY";
-  font-size: 37px;
-  color: orangered;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-#first {
-  box-sizing: border-box;
-  height: 100vh;
-  background-color: #f2eed7;
-}
-
-#header {
-  height: 80px;
-}
-#logo {
-  display: block;
-  width: 80px;
-  height: 80px;
-  background-image: url("https://i.pinimg.com/564x/d0/e6/33/d0e633b592cf3ff5813eed6c40ca6373.jpg");
-  background-size: cover;
-  float: left;
-}
-.gnb {
-  float: right;
-}
-.gnb ul li {
-  float: left;
-  margin-right: 30px;
-  line-height: 80px;
 }
 * {
   margin: 0;
@@ -73,8 +15,74 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  font-family: "Giants-Bold";
 }
 
 li {
   list-style: none;
+}
+
+/* design CSS */
+
+#background {
+  height: 100vh;
+  background-color: #f2eed7;
+}
+
+#header {
+  height: 80px;
+  border: 1px solid #000;
+  box-sizing: content-box;
+  font-family: "Giants-Bold";
+}
+
+#logo {
+  display: block;
+  width: 80px;
+  height: 80px;
+  float: left;
+  background-image: url("https://i.pinimg.com/564x/b2/13/a0/b213a02de2f1c45b6e302f7a9980a84e.jpg");
+  background-size: cover;
+}
+
+/* 메뉴 바 */
+
+.gnb {
+  float: right;
+}
+
+.gnb ul li {
+  float: left;
+  margin-right: 30px;
+  line-height: 80px;
+}
+
+#first,
+#second {
+  height: 100vh;
+  font-family: "Giants-Bold";
+}
+
+#second {
+  position: relative;
+  background: aquamarine;
+}
+
+#second p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 포지션 연습하기 */
+#first {
+  height: 100vh;
+  position: relative;
+  font-family: "Giants-Bold";
+}
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
