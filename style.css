@@ -30,6 +30,9 @@ li {
 }
 
 #header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   height: 80px;
   border: 1px solid #000;
   box-sizing: content-box;
@@ -40,20 +43,21 @@ li {
   display: block;
   width: 80px;
   height: 80px;
-  float: left;
+  /* float: left; */
   background-image: url("https://i.pinimg.com/564x/b2/13/a0/b213a02de2f1c45b6e302f7a9980a84e.jpg");
   background-size: cover;
 }
 
 /* 메뉴 바 */
-
-.gnb {
-  float: right;
+.gnb ul {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  /* float: right; */
 }
-
 .gnb ul li {
-  float: left;
-  margin-right: 30px;
+  /* float: left; */
+  /* margin-right: 30px; */
   line-height: 80px;
 }
 
@@ -64,8 +68,8 @@ li {
 }
 
 #second {
-  position: relative;
-  background: aquamarine;
+  /* position: relative; */
+  background: #f2eed7;
 }
 
 #second p {
@@ -75,7 +79,7 @@ li {
   transform: translate(-50%, -50%);
 }
 /* 포지션 연습하기 */
-#first {
+/* #first {
   height: 100vh;
   position: relative;
   font-family: "Giants-Bold";
@@ -85,4 +89,51 @@ li {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+} */
+#first {
+  height: 100vh;
+  position: relative;
+  font-family: "Giants-Bold";
+}
+
+.center {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+/* <버튼 디자인> */
+
+button {
+  width: 140px;
+  height: 38px;
+  border: 1px solid;
+  background-color: transparent;
+  margin-top: 60px;
+  font-family: "Giants-Bold";
+  cursor: pointer;
+  transition: all 0.5s;
+}
+button:hover {
+  border-color: transparent;
+  border-color: #f2eed7;
+  background-color: cornflowerblue;
+}
+
+.fixed {
+  position: fixed;
+}
+.sns {
+  right: 30px;
+  top: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+#second {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#second > * {
+  width: 100%;
+  height: 100%;
 }
