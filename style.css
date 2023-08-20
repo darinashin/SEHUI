@@ -6,6 +6,7 @@
   font-weight: 700;
   font-style: normal;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -43,8 +44,7 @@ li {
   display: block;
   width: 80px;
   height: 80px;
-  /* float: left; */
-  background-image: url("https://i.pinimg.com/564x/b2/13/a0/b213a02de2f1c45b6e302f7a9980a84e.jpg");
+  background-image: url("제목 없음 39.png");
   background-size: cover;
 }
 
@@ -53,43 +53,29 @@ li {
   display: flex;
   justify-content: space-around;
   width: 400px;
-  /* float: right; */
 }
 .gnb ul li {
-  /* float: left; */
-  /* margin-right: 30px; */
   line-height: 80px;
 }
 
-#first,
-#second {
+#first {
   height: 100vh;
   font-family: "Giants-Bold";
 }
 
 #second {
-  /* position: relative; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
   background: #f2eed7;
 }
 
-#second p {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+#second > * {
+  width: 100%;
+  height: 100%;
 }
+
 /* 포지션 연습하기 */
-/* #first {
-  height: 100vh;
-  position: relative;
-  font-family: "Giants-Bold";
-}
-.center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-} */
 #first {
   height: 100vh;
   position: relative;
@@ -102,6 +88,7 @@ li {
   bottom: 50%;
   transform: translate(50%, 50%);
 }
+
 /* <버튼 디자인> */
 
 button {
@@ -114,26 +101,41 @@ button {
   cursor: pointer;
   transition: all 0.5s;
 }
+
 button:hover {
   border-color: transparent;
   border-color: #f2eed7;
-  background-color: cornflowerblue;
+  background-color: thistle;
 }
+
+/* sns 영역 */
 
 .fixed {
   position: fixed;
 }
+
 .sns {
   right: 30px;
   top: 50%;
   transform: translate(-50%);
   z-index: 1;
 }
-#second {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+/* third 영역 */
+
+#third {
+  background: linear-gradient(to bottom, #fff7b5, #fffd6c, #f2eed7);
+  height: 100vh;
 }
-#second > * {
-  width: 100%;
-  height: 100%;
+#third {
+  background-image: url(https://cdn.pixabay.com/photo/2015/04/21/02/32/tabitha-732545_1280.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Giants-Bold";
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
 }
