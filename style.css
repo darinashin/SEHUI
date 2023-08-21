@@ -1,11 +1,12 @@
 /* reset css */
-@font-face {
+/* @font-face {
   font-family: "Giants-Bold";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2")
     format("woff2");
-  font-weight: 700;
+  font-size: 800;
   font-style: normal;
-}
+  text-align: center;
+} */
 
 * {
   margin: 0;
@@ -26,7 +27,7 @@ li {
 /* design CSS */
 
 #background {
-  height: 100vh;
+  height: 900vh;
   background-color: #f2eed7;
 }
 
@@ -59,15 +60,24 @@ li {
 }
 
 #first {
-  height: 100vh;
+  height: 100%;
   font-family: "Giants-Bold";
+  font-size: 30px;
 }
+
+/* #first > div > p:first-of-type {
+  font-family: "GangwonState";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/GangwonState.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+} */
 
 #second {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  background: #f2eed7;
+  row-gap: 40px;
+  column-gap: 30px;
 }
 
 #second > * {
@@ -105,7 +115,7 @@ button {
 button:hover {
   border-color: transparent;
   border-color: #f2eed7;
-  background-color: thistle;
+  background-color: #bebaa4;
 }
 
 /* sns 영역 */
